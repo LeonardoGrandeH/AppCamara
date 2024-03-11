@@ -1,3 +1,5 @@
+import javax.swing.text.View
+
 plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
@@ -32,6 +34,10 @@ android {
     }
     kotlinOptions {
         jvmTarget = "1.8"
+    }
+
+    viewBinding {
+        enable = true
     }
 }
 
